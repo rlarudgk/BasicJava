@@ -18,6 +18,7 @@ public class RandomExample {
 		int b = random.nextInt(10);
 		
 		System.out.println(a);
+		System.out.println(b);
 		
 		
 	}
