@@ -16,21 +16,19 @@ public class StudentTest {
         list.add(new StudentList("10002", "김예슬", 75, 60, 45));
         list.add(new StudentList("10006", "이정우", 95, 90, 90));
 
-		// 랭킹 구하기
+        // 랭킹 구하기
         for (int i = 0; i < list.size(); i++) {
             int rank = 1;
             for (int j = 0; j < list.size(); j++) {
-                if (list.get(i).getScore() < list.get(j).getScore()) {
-                    rank++;
+                if (i != j) {
+                    if (list.get(i).getScore() < list.get(j).getScore()) {
+                        rank++;
+                    }
                 }
                 list.get(i).setRank(rank);
             }
         }
-		// <<---- 랭킹 구하기
-
-		// 2중 반복문 트레이닝 별찍기가 최고
-
-
+        // <<---- 랭킹 구하기
 
         System.out.println("정렬 전: ");
         for (StudentList mem : list) {
