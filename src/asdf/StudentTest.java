@@ -30,23 +30,27 @@ public class StudentTest {
         }
         // <<---- 랭킹 구하기
 
-        System.out.println("정렬 전: ");
-        for (StudentList mem : list) {
-            System.out.println(mem);
+
+        System.out.print("정렬 전 : ");
+        for (StudentList student : list) {
+
+            System.out.println(student);
         }
         System.out.println("--------------------------");
 
+
+        System.out.print("총점의 오름차순으로 정렬 후 : ");
         Collections.sort(list);
-        System.out.println("총점의 오름차순으로 정렬 후 : ");
-        for (StudentList mem : list) {
-            System.out.println(mem);
+        for (StudentList student : list) {
+            System.out.println(student);
         }
         System.out.println("--------------------------");
 
+
+        System.out.print("총점의 내림차순으로 정렬 후 : ");
         Collections.sort(list, new SortNumDesc());
-        System.out.println("총점의 내림차순으로 정렬 후 : ");
-        for (StudentList mem : list) {
-            System.out.println(mem);
+        for (StudentList student : list) {
+            System.out.println(student);
         }
         System.out.println("--------------------------");
     }
