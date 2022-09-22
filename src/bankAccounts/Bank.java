@@ -8,8 +8,8 @@ public class Bank {
 	public Bank() {
 		this.customers = new Customer[10];
 	}
-	public void addCustomer(Customer customer) {
-		this.customers = Customer;
+	public void addCustomer(Customer[] customer) {
+		this.customers = customer;
 		numberOfCustmers++;
 	}
 }

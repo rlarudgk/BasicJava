@@ -4,6 +4,7 @@ public class BankAccount {
 	
 	private int balance;
 
+	public BankAccount(){}
 	public BankAccount(int balance) {
 		this.balance = balance;
 	}
@@ -14,6 +15,6 @@ public class BankAccount {
 		
 	}
 	public boolean withdraw(int amount) {
-		return 
+		return true;
 	}
 }

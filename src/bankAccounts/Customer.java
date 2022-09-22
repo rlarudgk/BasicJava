@@ -5,7 +5,8 @@ public class Customer {
 	private String firstName;
 	private String lastName;
 	private BankAccount transfer;
-	
+
+	public Customer() {}
 	public Customer(String firstName, String LastName) {
 		this.firstName = firstName;
 		this.lastName = lastName;
@@ -17,7 +18,7 @@ public class Customer {
 		return lastName;
 	}
 	public BankAccount getAccount() {
-		return 
+		return new BankAccount();
 	}
 	
 
